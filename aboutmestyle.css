@@ -1,0 +1,22 @@
+body {
+  background-color: pink;
+}
+
+h1 {
+  color: white;
+  font-family: palatino;
+  font-size: 300%;
+  border: 1px solid powderblue;
+  padding: 20px;
+}
+
+h3 {
+  color: white;
+  font-family: palatino;
+  font-size: 170%
+}
+
+p {
+  color: grey;
+  font-family: georgia;
+}
