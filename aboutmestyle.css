@@ -24,4 +24,6 @@ p {
 img {
   float: left;
   margin: 10px 10px 10px 10px;
+  width: 120px;
+  height: 220px;
 }
