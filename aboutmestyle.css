@@ -20,3 +20,8 @@ p {
   color: grey;
   font-family: georgia;
 }
+
+img {
+  float: right;
+  margin: 10px 10px 10px 10px;
+}
