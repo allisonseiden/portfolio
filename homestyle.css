@@ -29,7 +29,7 @@ img {
 div.tab {
     float: left;
     border: 1px;
-    background-color: #F5F5FF;
+    background: rgba(245, 245, 253, 0.5);
     width: 150px;
     height: 100%;
 }
@@ -60,7 +60,7 @@ div.tab button.active {
 
 /* Style the tab content */
 .tabcontent {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.4);
     float: left;
     padding: 0px 12px;
     border: none;
