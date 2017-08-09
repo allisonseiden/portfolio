@@ -7,7 +7,7 @@
     <div class="tab">
       <button class="tablinks" onclick="openPage(event, 'About')">About</button>
       <button class="tablinks" onclick="openPage(event, 'Work and Education')">Work and Education</button>
-      <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+      <button class="tablinks" onclick="openPage(event, 'Contact')">Contact</button>
     </div>
 
     <div id="About" class="tabcontent">
@@ -45,7 +45,7 @@
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(pageName).style.display = "block";
         evt.currentTarget.className += " active";
       }
 
