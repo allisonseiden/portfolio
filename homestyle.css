@@ -1,9 +1,9 @@
 body {
-  background-image: url("http://data.whicdn.com/images/287943447/superthumb.jpg");
+  background-image: url("https://studio87blog.files.wordpress.com/2016/01/white-marble-2048.jpg");
 }
 
 h1 {
-  color: white;
+  color: black;
   text-align: center;
   font-family: palatino;
   font-size: 300%;
@@ -60,6 +60,7 @@ div.tab button.active {
 
 /* Style the tab content */
 .tabcontent {
+    background: rgba(255, 255, 255, 0.5);
     float: left;
     padding: 0px 12px;
     border: none;
