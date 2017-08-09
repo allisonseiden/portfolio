@@ -30,8 +30,8 @@ div.tab {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 30%;
-    height: 80%;
+    width: 100px;
+    height: 800px;
 }
 
 /* Style the buttons inside the tab */
@@ -41,7 +41,7 @@ div.tab button {
     color: black;
     padding: 22px 16px;
     width: 100%;
-    border: none;
+    border: 1px;
     outline: none;
     text-align: center;
     cursor: pointer;
@@ -65,5 +65,5 @@ div.tab button.active {
     border: 1px solid #ccc;
     width: 70%;
     border-left: none;
-    height: 300px;
+    height: 700px;
 }
