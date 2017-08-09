@@ -5,28 +5,37 @@
   </head>
   <body>
     <div class="tab">
-      <button class="tablinks" onclick="http://google.com">Google</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      <button class="tablinks" onclick="openPage(event, 'About')">About</button>
+      <button class="tablinks" onclick="openPage(event, 'Work and Education')">Work and Education</button>
+      <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
     </div>
 
-    <div id="London" class="tabcontent">
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
+    <div id="About" class="tabcontent">
+      <h2>About</h2>
+      <p>My name is Allison Seiden and I am 19 years old. My passions include volunteer work, crafts, and everything Harry Potter related.
+      I enjoy teaching myself new things and finding new music to listen to. In my free time, I like to cuddle up and binge watch a good
+      show, go exploring, or find a new art project. I made this webpage from scratch so I hope you enjoy!</p>
     </div>
 
-    <div id="Paris" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p> 
+    <div id="Work and Education" class="tabcontent">
+      <h2>Work and Education</h2>
+      <h4>Work Experience</h4><hr>
+      <h4><strong>Teaching Assistant</strong><i>Summer Immersion Program, Girls Who Code</i></h4><br>
+      <p>Stamford, CT, June-August 2017</p>
+      <ul>Provide support to lead teacher during a free program for diverse group of girls to learn coding and confidence</ul>
+      <ul>Assist in the delivery of lessons surrounding coding fundamentals, applications, data science, and algorithms</ul>
+      <ul>Effectively address students’ challenges and questions to ensure an engaging learning environment</ul>
+      <ul>Act as mentor for students and interface with student families as needed</ul>
+      <ul>Coordinate and provide logistic support on off-site trips and classroom management</ul>
     </div>
 
-    <div id="Tokyo" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Hi!</p>
     </div>
     
     <script>
-      function openCity(evt, cityName) {
+      function openPage(evt, pageName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
