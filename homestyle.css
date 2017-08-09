@@ -28,10 +28,10 @@ img {
 /* Style the tab */
 div.tab {
     float: left;
-    border: 1px solid #ccc;
+    border: 1px;
     background-color: #F5F5FF;
     width: 150px;
-    height: 800px;
+    height: 100%;
 }
 
 /* Style the buttons inside the tab */
