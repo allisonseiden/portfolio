@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="teststyle.css">
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</button>
+      <button class="tablinks" onclick="openPage(event, 'About')">About</button>
+      <button class="tablinks" onclick="openPage(event, 'Work Experience')">Work Experience</button>
+      <button class="tablinks" onclick="openPage(event, 'Leadership Experience')">Leadership Experience</button>
+      <button class="tablinks" onclick="openPage(event, 'Contact')">Contact</button>
+    </div>
+    
+    <div id="Home" class="tabcontent">
+      <h1>This is my home page</h1>
+    </div>
 
+    <div id="About" class="tabcontent">
+      <h2>About</h2>
+      <p>Test</p>
+    </div>
+
+    <div id="Work Experience" class="tabcontent">
+      <h2>Work Experience</h2><hr>
+      <h4>Teaching Assistant, <i>Summer Immersion Program, Girls Who Code</i></h4><br>
+      <p>Stamford, CT, June-August 2017</p>
+      <ul>
+        <li>Provide support to lead teacher during a free program for diverse group of girls to learn coding and confidence</li>
+        <li>Assist in the delivery of lessons surrounding coding fundamentals, applications, data science, and algorithms</li>
+        <li>Effectively address students’ challenges and questions to ensure an engaging learning environment</li>
+        <li>Act as mentor for students and interface with student families as needed</li>
+        <li>Coordinate and provide logistic support on off-site trips and classroom management</li>
+      </ul>
+    </div>
+    
+    <div id="Leadership Experience" class="tabcontent">
+      <h2>Leadership Experience</h2><hr>
+      <h4>Founding member, <i>NRHS Computer Science Club</i></h4></br>
+      <p>New Rochelle, NY, September 2015-June 2016</p>
+      <ul>
+         <li>Worked on interesting team projects not included in the AP Computer Science A curriculum</li>
+         <li>Collaborated with other students in order to improve coding skills</li>
+      </ul>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h2>Contact</h2>
+      <p>Hi!</p>
+    </div>
+    
+    <script>
+      function openPage(evt, pageName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(pageName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
