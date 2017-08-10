@@ -5,15 +5,21 @@
   </head>
   <body>
     <div class="tab">
-      <button class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen"><img src="https://image.flaticon.com/icons/svg/25/25694.svg"></button>
+      <button class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</button>
       <button class="tablinks" onclick="openPage(event, 'About')">About</button>
-      <button class="tablinks" onclick="openPage(event, 'Work Experience')">Work Experience</button>
-      <button class="tablinks" onclick="openPage(event, 'Leadership Experience')">Leadership Experience</button>
+      <button class="accordion">Resume</button>
+        <div class="panel">
+          <button class="tablinks" onclick="openPage(event, 'Education')">Education &amp; Skills</button>
+          <button class="tablinks" onclick="openPage(event, 'Work Experience')">Work Experience</button>
+          <button class="tablinks" onclick="openPage(event, 'Leadership Experience')">Leadership Experience</button>
+          <button class="tablinks" onclick="openPage(event, 'Extracurriculars')">Extracurriculars</button>
+        </div>
+      <button class="tablinks" onclick="window.location.href='http://allisonseiden.github.io/portfolio/blog.html'">Blog</button>
       <button class="tablinks" onclick="openPage(event, 'Contact')">Contact</button>
     </div>
-    
+
     <div id="Home" class="tabcontent">
-      <h1>This is my home page</h1>
+      <h1>Allison Seiden</h1>
     </div>
 
     <div id="About" class="tabcontent">
@@ -21,9 +27,21 @@
       <p>Test</p>
     </div>
 
+    <div id="Education" class="tabcontent">
+      <h2>Education &amp; Skills</h2><hr>
+      <h3>Johns Hopkins University, Class of 2020</h3>
+      <p><i>Expected BS in Applied Mathematics and Statistics, and Computer Science</i><p>
+      <p>Highlighted Coursework: <i>Discrete Mathematics, Introductory Programming in Java, Linear Algebra, Data Structures (completed), Intermediate Programming (currently enrolled)</i></p>
+      <p>Academic Honors: <i>Dean's List Spring 2017</i></p><br>
+      <h3>Skills</h3>
+      <p>Proficient in Java</p>
+      <p>Self-taught working knowledge in HTML, CSS, JavaScript, and Python</p>
+      <p>Can read all seven Harry Potter novels in under three weeks</p>
+    </div>
+
     <div id="Work Experience" class="tabcontent">
       <h2>Work Experience</h2><hr>
-      <h4>Teaching Assistant, <i>Summer Immersion Program, Girls Who Code</i></h4><br>
+      <h3><b>Teaching Assistant, <i>Summer Immersion Program, Girls Who Code</i></b></h3>
       <p>Stamford, CT, June-August 2017</p>
       <ul>
         <li>Provide support to lead teacher during a free program for diverse group of girls to learn coding and confidence</li>
@@ -31,24 +49,66 @@
         <li>Effectively address students’ challenges and questions to ensure an engaging learning environment</li>
         <li>Act as mentor for students and interface with student families as needed</li>
         <li>Coordinate and provide logistic support on off-site trips and classroom management</li>
+      </ul><br>
+      <h3><b>General Counselor, <i>Camp Chipinaw</i></b></h3>
+      <p>Swan Lake, NY, June-August 2015-2016</p>
+      <ul>
+        <li>Worked on a team with seven other counselors to plan and supervise activities for children ages 8-11</li>
+        <li>Mediated disputes and facilitated communication between children, parents, and other staff</li>
+        <li>Led a team of artists to complete mural-style plaque in end-of-summer competition</li>
       </ul>
     </div>
-    
+
     <div id="Leadership Experience" class="tabcontent">
       <h2>Leadership Experience</h2><hr>
-      <h4>Founding member, <i>NRHS Computer Science Club</i></h4></br>
+      <h3><b>Founding member, <i>NRHS Computer Science Club</i></b></h3>
       <p>New Rochelle, NY, September 2015-June 2016</p>
       <ul>
          <li>Worked on interesting team projects not included in the AP Computer Science A curriculum</li>
          <li>Collaborated with other students in order to improve coding skills</li>
+      </ul><br>
+      <h3><b>Agenda Chair, <i>New Rochelle Model Congress</i></b></h3>
+      <p>New Rochelle, NY, May 2015-May 2016</p>
+      <ul>
+        <li>Served on the Executive Board for a student-run delegation of over 50 high school students</li>
+        <li>Organized a 2-day debate convention hosting 9 schools in an intensive competition</li>
+      </ul><br>
+      <h3><b>Team Secretary, <i>NRHS Math Team</i></b></h3>
+      <p>New Rochelle, NY, September 2012-May 2016</p>
+      <ul>
+        <li>Competed in monthly competitions testing math and problem solving skills</li>
       </ul>
     </div>
 
-    <div id="Contact" class="tabcontent">
-      <h2>Contact</h2>
-      <p>Hi!</p>
+    <div id="Extracurriculars" class="tabcontent">
+      <h2>Extracurriculars</h2><hr>
+      <h3><b>Volunteer, <i>Art Brigade</i></b></h3>
+      <p>Baltimore, MD, September 2016-Present</p>
+      <ul>
+        <li>Instruct and complete crafts with inner city Baltimore elementary school students weekly</li>
+      </ul>
+      <h3><b>Active Member, <i>Hopkins Undergraduate Society for Applied Math (HUSAM)</i></b></h3>
+      <p>Baltimore, MD, September 2016-Present</p>
+      <h3><b>Active Member, <i>Society of Women Engineers</i></b></h3>
+      <p>Baltimore, MD, October 2016-Present</p>
+      <h3><b>Active Member, <i>Women in Computer Science (WiCS)</i></b></h3>
+      <p>Baltimore, MD, December 2016-Present</p>
     </div>
-    
+
+    <div id="Contact" class="tabcontent">
+      <h2>Send me an email:</h2>
+      <form action="mailto:aseiden7@jhu.edu" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <textarea name="message" rows="10" cols="30"></textarea><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+
     <script>
       function openPage(evt, pageName) {
         var i, tabcontent, tablinks;
@@ -64,6 +124,21 @@
         evt.currentTarget.className += " active";
       }
 
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+          this.classList.toggle("active");
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        }
+      }
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
     </script>
